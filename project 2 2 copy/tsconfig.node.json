@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",  // Target ES2022 for compatibility with Node.js
+    "lib": ["ES2023"],  // Include latest JavaScript features
+    "module": "commonjs",  // Use CommonJS module system
+    "moduleResolution": "node",  // Node.js style module resolution
+    "skipLibCheck": true,  // Skip checking types for libraries
+    "strict": true,  // Enable strict type-checking options
+    "esModuleInterop": true,  // Allow compatibility between CommonJS and ES modules
+    "outDir": "./dist",  // Output directory for compiled files
+    "rootDir": "./",  // Root directory for the project
+    "declaration": true,  // Generate type declaration files
+    "declarationMap": true,  // Map declaration files for debugging
+    "emitDeclarationOnly": true  // Only generate declaration files, no JavaScript
+  },
+  "include": [
+    "server.js",  // Include the JavaScript server file
+    "src/**/*.ts",  // Include all TypeScript files in the 'src' folder
+    "vite.config.ts"  // If you have a Vite configuration in TypeScript
+  ],
+  "exclude": [
+    "node_modules",  // Exclude node_modules from being compiled
+    "dist"  // Exclude the 'dist' folder if you have it
+  ]
+}
