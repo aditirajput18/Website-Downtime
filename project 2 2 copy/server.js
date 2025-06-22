@@ -19,8 +19,8 @@ const __dirname = path.dirname(__filename);
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'amitarajput066@gmail.com', // replace with your Gmail
-    pass: 'mngr czfq xtrq ytqx',       // your Gmail app password
+    user: '', // replace with your Gmail
+    pass: '',       // your Gmail app password
   },
 });
 
